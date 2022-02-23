@@ -102,14 +102,20 @@ main{
     margin-bottom: 1rem;
 }
 
-#tasks .task{
+#tasks .task {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     background-color: var(--darkest);
     padding: 1rem;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
+
+
+#tasks .task .content {
+    flex : 1 1 0%;
+}
+
 
 #tasks .task .content .text {
     color: var(--light);
@@ -123,6 +129,38 @@ main{
     color: var(--pink);
 }
 
+#tasks .task .actions {
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.tast .actions button {
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+}
+
+.tast .actions button:hover{
+    opacity: 0.8;
+}
+
+.tast .actions button:active {
+    opacity: 0.6;
+}
+
+.task .actions .edit {
+    background-image: linear-gradient(to right, var(--pink), var(--purple)) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.task .actions .delete{
+    color: crimson;
+}
 
 
 
